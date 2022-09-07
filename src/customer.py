@@ -8,5 +8,8 @@ class Customer:
     def decrease_wallet(self, amount):
         self.wallet -= amount
 
-    def increase_caffeine_level(self, amount):
+    def increase_energy_level(self, amount):
         self.energy_level += amount
+
+    def decrease_energy_level(self, amount):
+        self.energy_level -= amount

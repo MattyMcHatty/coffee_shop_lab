@@ -13,4 +13,8 @@ class CoffeeShop:
     def check_energy_level(self, customer_energy_level):
         return customer_energy_level < 10
         
-    
+    def stock_value(self, drinks_list):
+        total_value = 0
+        for drink in drinks_list:
+            total_value += drink["beverage"].price * drink["stock"]
+        return total_value
